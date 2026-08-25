@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#c8102e"/>
+  <rect x="26" y="26" width="460" height="460" rx="78" fill="none" stroke="#fbf3e2" stroke-width="10" stroke-dasharray="2 22" stroke-linecap="round"/>
+  <!-- kraft grocery bag -->
+  <path d="M150 200 L172 428 Q173 444 190 444 L322 444 Q339 444 340 428 L362 200 Z" fill="#e8d9bc" stroke="#2c2420" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M150 200 L128 236 L150 250 Z M362 200 L384 236 L362 250 Z" fill="#d9c49c" stroke="#2c2420" stroke-width="10" stroke-linejoin="round"/>
+  <!-- handles -->
+  <path d="M205 200 Q205 132 256 132 Q307 132 307 200" fill="none" stroke="#2c2420" stroke-width="16" stroke-linecap="round"/>
+  <!-- red heart on the bag -->
+  <path d="M256 390 C 200 340, 196 296, 226 282 C 244 274, 256 288, 256 300 C 256 288, 268 274, 286 282 C 316 296, 312 340, 256 390 Z" fill="#c8102e" stroke="#2c2420" stroke-width="10" stroke-linejoin="round"/>
+  <!-- stitches -->
+  <line x1="176" y1="220" x2="336" y2="220" stroke="#2c2420" stroke-width="8" stroke-dasharray="4 16" stroke-linecap="round"/>
+</svg>

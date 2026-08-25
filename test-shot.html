@@ -1,0 +1,7 @@
+<!doctype html>
+<!-- dev: true-390px-viewport screenshot rig. Headless Chrome on Windows clamps
+     the WINDOW to ~500px min width, but an iframe lays out at exactly the CSS
+     width given — so screenshot this page and crop the left 390px. -->
+<meta charset="utf-8">
+<style>html,body{margin:0;background:#333}iframe{width:390px;height:1400px;border:0;display:block}</style>
+<iframe src="index.html#still=1"></iframe>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TJ's Run — the family list</title>
+<meta name="theme-color" content="#c8102e">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Karla:wght@400;700;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="awning">
+  <div class="masthead">
+    <h1>TRADER&nbsp;JOE&rsquo;S&nbsp;RUN</h1>
+    <div class="sub">the family list</div>
+  </div>
+  <div class="scallops" aria-hidden="true"></div>
+</header>
+
+<main>
+  <section class="clipboard" id="addPanel">
+    <div class="clip" aria-hidden="true"></div>
+    <form id="addForm" autocomplete="off">
+      <label class="photoPick" id="photoPick" title="add a photo so it's easy to spot">
+        <input type="file" id="photoInput" accept="image/*">
+        <span id="photoPickInner" class="photoPickInner">📷<em>photo</em></span>
+      </label>
+      <div class="fields">
+        <input type="text" id="nameInput" placeholder="what are we getting?" maxlength="60" required>
+        <div class="qtyRow">
+          <button type="button" class="qbtn" id="qtyMinus" aria-label="less">−</button>
+          <span class="qty" id="qtyVal">1</span>
+          <button type="button" class="qbtn" id="qtyPlus" aria-label="more">+</button>
+          <button type="submit" class="addBtn">Add it!</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <div class="counts" id="counts"></div>
+
+  <section class="listSection">
+    <h2 class="chalkHead">to find</h2>
+    <div class="cards" id="todoCards"></div>
+    <div class="empty" id="todoEmpty" hidden>
+      <div class="doodle">🛒</div>
+      list&rsquo;s empty — add the essentials!
+    </div>
+  </section>
+
+  <section class="listSection">
+    <h2 class="chalkHead done">in the cart
+      <button class="clearBtn" id="clearBtn" hidden>clear</button>
+    </h2>
+    <div class="cards" id="doneCards"></div>
+    <div class="empty" id="doneEmpty" hidden>nothing yet — happy hunting</div>
+  </section>
+
+  <footer>
+    <button class="shareBtn" id="shareBtn">📤 share the list</button>
+    <div class="crew">made with ❤️ for the fam</div>
+  </footer>
+</main>
+
+<div class="lightbox" id="lightbox" hidden>
+  <div class="lightframe">
+    <img id="lightImg" alt="">
+    <div class="lightname" id="lightName"></div>
+  </div>
+</div>
+
+<pre id="testOut" hidden></pre>
+
+<script src="app.js"></script>
+</body>
+</html>
