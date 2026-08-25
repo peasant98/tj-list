@@ -1,5 +1,5 @@
 // TJ's Run service worker — cache-first app shell, runtime-cache fonts.
-var CACHE = 'tjrun-v1';
+var CACHE = 'tjrun-v2';
 var CORE = ['.', 'index.html', 'style.css', 'app.js', 'manifest.json', 'icon.svg'];
 
 self.addEventListener('install', function (e) {
